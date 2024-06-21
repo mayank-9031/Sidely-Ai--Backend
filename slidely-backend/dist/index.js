@@ -6,52 +6,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-// const app = express();
-// const port = 3000;
-// app.use(bodyParser.json());
-// interface Submission {
-//     name: string;
-//     email: string;
-//     phone: string;
-//     github_link: string;
-//     stopwatch_time: string;
-// }
-// interface Database {
-//     submissions: Submission[];
-// }
-// const dbPath = './db.json';
-// if (!fs.existsSync(dbPath)) {
-//     fs.writeFileSync(dbPath, JSON.stringify({ submissions: [] }));
-// }
-// const readDatabase = (): Database => {
-//     const data = fs.readFileSync(dbPath, 'utf8');
-//     return JSON.parse(data);
-// }
-// const writeDatabase = (db: Database) => {
-//     fs.writeFileSync(dbPath, JSON.stringify(db, null, 2));
-// }
-// app.get('/ping', (req: Request, res: Response) => {
-//     res.json(true);
-// });
-// app.post('/submit', (req: Request, res: Response) => {
-//     const newSubmission: Submission = req.body;
-//     const db = readDatabase();
-//     db.submissions.push(newSubmission);
-//     writeDatabase(db);
-//     res.status(201).send('Submission saved');
-// });
-// app.get('/read', (req: Request, res: Response) => {
-//     const index = parseInt(req.query.index as string);
-//     const db = readDatabase();
-//     if (index >= 0 && index < db.submissions.length) {
-//         res.json(db.submissions[index]);
-//     } else {
-//         res.status(404).send('Submission not found');
-//     }
-// });
-// app.listen(port, () => {
-//     console.log(`Server is running at http://localhost:${port}`);
-// });
+
 const express_1 = __importDefault(require("express"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const fs_1 = __importDefault(require("fs"));
